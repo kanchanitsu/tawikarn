@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+nav{
+    font-family: 'Kanit', sans-serif;
+}
+
+#logo{
+    width: 70px;
+    height: 70px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+}
