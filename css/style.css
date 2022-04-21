@@ -1,13 +1,263 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-nav{
-    font-family: 'Kanit', sans-serif;
+body {
+  font-family: "Kanit", sans-serif;
 }
 
-#logo{
-    width: 70px;
-    height: 70px;
-    margin-left: 1rem;
-    margin-right: 1rem;
-
+#bg-page {
+  height: 520px;
 }
+
+#logo {
+  width: 70px;
+  height: 70px;
+  margin-right: 1rem;
+}
+
+footer {
+  color: white;
+  background-color: #212121;
+  height: 227px;
+}
+
+.masthead {
+  padding-top: calc(6rem + 74px);
+  padding-bottom: 6rem;
+}
+.masthead .masthead-heading {
+  font-size: 30px;
+  line-height: 2.75rem;
+}
+.masthead .masthead-subheading {
+  font-size: 20px;
+}
+.masthead .masthead-avatar {
+  width: 15rem;
+}
+
+.navbar {
+  background-color: rgb(238, 155, 0);
+}
+
+.navbar-brand {
+  color: #fff;
+  font-weight: 600;
+}
+
+.nav-link {
+  font-weight: 600;
+  color: #fff;
+}
+
+.nav-link:hover ,.navbar-brand:hover{
+  color:#212121;
+}
+
+nav .container-fluid {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.navbar .nav-item {
+  margin-right: 1.5rem;
+}
+
+/* page-section */
+
+.page-section {
+  padding: 3rem 0;
+}
+.page-section .page-section-heading {
+  font-size: 2.25rem;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+@media (min-width: 992px) {
+  .page-section .page-section-heading {
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
+}
+
+/* portfolio */
+
+.portfolio .portfolio-item {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  max-width: 25rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.portfolio .portfolio-item .portfolio-item-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.portfolio .portfolio-item .portfolio-item-caption:hover {
+  opacity: 1;
+}
+.portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
+  font-size: 1.5rem;
+}
+
+.portfolio-modal .btn-close {
+  color: #1abc9c;
+  font-size: 2rem;
+  padding: 1rem;
+}
+.portfolio-modal .portfolio-modal-title {
+  font-size: 2.25rem;
+  line-height: 2rem;
+}
+@media (min-width: 992px) {
+  .portfolio-modal .portfolio-modal-title {
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
+}
+
+.introduce {
+  width: 720px;
+  margin-top: 7.5rem;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+
+.card {
+    display:blockc;
+}
+
+.introduce img {
+  width: 150px;
+  height: auto;
+  text-align: center;
+}
+
+.introduce_2 {
+  height: 720px;
+  background-color: #212121;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+.introduce_2 .content h1 {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.introduce_2 .content {
+  padding: 1rem;
+}
+
+.card-title,
+.card-text {
+  color: black;
+}
+
+.contact_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contact_box1 {
+  text-align: center;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.contact_box2 {
+  padding-right: 1rem;
+  margin: auto;
+}
+
+.contact_box2 img {
+  width: auto;
+  height: 70px;
+  margin-right: 3rem;
+  align-items: center;
+}
+
+.contact_box2 #contact_text_1 {
+  font-size: 24px;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contact_box2 #contact_text_2 {
+  font-size: 24px;
+  align-items: center;
+}
+
+#mainNav{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  transition: padding-top 0.3s, padding-bottom 0.3s;
+}
+
+#mainNav.navbar-shrink {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+#mainNav.navbar-shrink .navbar-brand {
+  font-size: 20px;
+}
+
+@media (max-width: 420px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+
+@media (max-width: 1023px) {
+  .contact_container {
+    flex-direction: column;
+  }
+  footer{
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+    .contact_container {
+      flex-direction: column;
+    }
+
+    .contact_box2 img {
+        width: auto;
+        height: 55px;
+        margin-right: 2rem;
+        align-items: center;
+      }
+
+    .contact_box2 #contact_text_1 {
+        font-size: 18px;
+        flex-direction: column;
+        align-items: center;
+      }
+
+    .contact_box2 #contact_text_2 {
+        font-size: 22px;
+        align-items: center;
+      }
+  }
+
+  @media (min-width: 992px) {
+    .masthead {
+      padding-top: calc(6rem + 104px);
+      padding-bottom: 6rem;
+    }
+    .masthead .masthead-heading {
+      font-size: 4rem;
+      line-height: 3.5rem;
+    }
+    .masthead .masthead-subheading {
+      font-size: 1.5rem;
+    }
+  }
