@@ -13,9 +13,7 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     <!-- Import CSS -->
     <link rel="stylesheet" href="/css/style.css" />
     <title>Tawikarn2019</title>
@@ -35,9 +33,9 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                            href="#portfolio">ผลงาน</a></li>
+                            href="/selllist.html">รายการสินค้า</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                            href="#about">เกี่ยวกับบริษัท</a></li>
+                            href="#portfolio">เกี่ยวกับบริษัท</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
                             href="#contact">ติดต่อ</a></li>
                 </ul>
@@ -61,10 +59,10 @@
         </div>
     </header>
     <!-- Portfolio Section-->
-    <section class="page-section portfolio" id="portfolio">
+    <section id="portfolio" class="page-section portfolio">
         <div class="container">
             <!-- Portfolio Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-secondary">ผลงาน</h2>
+            <h2 class="page-section-heading text-center text-uppercase text-secondary">รายการสินค้า</h2>
             <!-- Portfolio Grid Items-->
             <div class="row justify-content-center">
                 <!-- Portfolio Item 1-->
@@ -136,8 +134,9 @@
             </div>
         </div>
     </section>
+
     <!-- Footer -->
-    <footer>
+    <footer id="contact">
         <div id="bg-foot">
             <div class="contact_container">
                 <div class="contact_box1">
@@ -148,11 +147,11 @@
                 </div>
 
                 <div class="contact_box2">
-                    <div id="contact_text_1">
+                    <div id="contact-item-1">
                         <img src="/img/icons8-facebook-150.png" alt="facebook icon">
-                        <span id="contact_text_1">ร้านป้ายลพบุรี บริษัท ทวิกานต์</span>
+                        <span id="contact_text_1"><a href="https://www.facebook.com/thawikarn1/">ร้านป้ายลพบุรี บริษัท ทวิกานต์</a></span>
                     </div>
-                    <div id="contact_text_2">
+                    <div id="contact-item-2">
                         <img src="/img/icons8-line-144.png" alt="line icon">
                         <span>@tawi</span>
                     </div>
@@ -160,10 +159,42 @@
                 </div>
             </div>
         </div>
-
-
-
     </footer>
+
+    <!-- Portfolio modal -->
+    <!-- Portfolio Modal 1-->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-2">Log Cabin</h2>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="/img/FrontPic.jpg" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
+                                    assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam
+                                    velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                                </p>
+                                <button class="btn" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 2-->
+
 
     <!-- Import JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
